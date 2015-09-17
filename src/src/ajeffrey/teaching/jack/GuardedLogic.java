@@ -32,7 +32,8 @@ class GuardedLogicImpl implements Logic, Runnable {
 
     protected PrintWriter out = DevNull.printWriter;
 
-    // protected Guard flag = Guard.factory.build (true);
+    // EDITED by Yuancheng Zhang:
+  	// I changed the flag as a static obj:
     protected static Guard flag = Guard.factory.build (true);
 
     protected final String message = 
