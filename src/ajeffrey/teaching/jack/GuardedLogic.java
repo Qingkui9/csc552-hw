@@ -11,8 +11,8 @@ import java.io.PrintWriter;
  * application.  This uses a separate thread for each window, and
  * uses a guard to handle suspend/resume.  This is how I would recommend
  * implementing this application!
- * @version 1.0.1
- * @author Alan Jeffrey
+ * @version 1.0.2
+ * @author Alan Jeffrey and Yuancheng Zhang
  */
 public interface GuardedLogic {
 
