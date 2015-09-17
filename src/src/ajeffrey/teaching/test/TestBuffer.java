@@ -34,7 +34,7 @@ public class TestBuffer {
 	// Send debugging output to a file
 	Debug.out.addFile ("TestBufferDebug.txt");
 	// Switch on step debugging
-        Debug.out.addFactory (StepDebugStream.factory);
+    Debug.out.addFactory (StepDebugStream.factory);
 	// Start the threads.
 	threadA.start ();
 	threadB.start ();
