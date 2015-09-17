@@ -32,7 +32,8 @@ class GuardedLogicImpl implements Logic, Runnable {
 
     protected PrintWriter out = DevNull.printWriter;
 
-    protected Guard flag = Guard.factory.build (true);
+    // protected Guard flag = Guard.factory.build (true);
+    protected static Guard flag = Guard.factory.build (true);
 
     protected final String message = 
 	"\nAll work and no play makes Jack a dull boy.";
