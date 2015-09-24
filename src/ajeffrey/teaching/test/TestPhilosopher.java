@@ -5,14 +5,12 @@ import ajeffrey.teaching.debug.StepDebugStream;
 
 import ajeffrey.teaching.dining.Philosopher;
 import ajeffrey.teaching.dining.PhilosopherFactory;
-// EDITED by Yuancheng Zhang:
-// I changed the package name as OrderedPhilosopher instead of DeadlockingPhilosopher
-import ajeffrey.teaching.dining.OrderedPhilosopher;
+import ajeffrey.teaching.dining.DeadlockingPhilosopher;
 
 /**
  * A test of the dining philosophers, with four philosophers.
- * @author Alan Jeffrey and Yuancheng Zhang
- * @version 1.0.2
+ * @author Alan Jeffrey
+ * @version 1.0.1
  * @see Philosopher
  */
 public class TestPhilosopher {
@@ -28,10 +26,7 @@ public class TestPhilosopher {
 	final Comparable fork3 = "Fork 3";
 	final Comparable fork4 = "Fork 4";
 	// Which philosopher factory to use: you may want to edit this!
-
-	// EDITED by Yuancheng Zhang:
-	// I changed the object type as OrderedPhilosopher.factory instead of DeadlockingPhilosopher.factory
-	final PhilosopherFactory factory = OrderedPhilosopher.factory;
+	final PhilosopherFactory factory = DeadlockingPhilosopher.factory;
 	// Create the philosophers
 	final Philosopher fred = factory.build (fork1, fork2, "Fred");
 	final Philosopher wilma = factory.build (fork2, fork3, "Wilma");
