@@ -5,12 +5,14 @@ import ajeffrey.teaching.debug.StepDebugStream;
 
 import ajeffrey.teaching.dining.Philosopher;
 import ajeffrey.teaching.dining.PhilosopherFactory;
-import ajeffrey.teaching.dining.DeadlockingPhilosopher;
+// Edited by Yuancheng
+// changed the deadlock philosopher to token phil
+import ajeffrey.teaching.dining.TokenPhilosopher;
 
 /**
  * A test of the dining philosophers, with four philosophers.
- * @author Alan Jeffrey
- * @version 1.0.1
+ * @author Alan Jeffrey and Yuancheng Zhang
+ * @version 1.0.2
  * @see Philosopher
  */
 public class TestPhilosopher {
@@ -26,7 +28,10 @@ public class TestPhilosopher {
 	final Comparable fork3 = "Fork 3";
 	final Comparable fork4 = "Fork 4";
 	// Which philosopher factory to use: you may want to edit this!
-	final PhilosopherFactory factory = DeadlockingPhilosopher.factory;
+	
+	// Edited by Yuancheng
+	// change philosopher type
+	final PhilosopherFactory factory = TokenPhilosopher.factory;
 	// Create the philosophers
 	final Philosopher fred = factory.build (fork1, fork2, "Fred");
 	final Philosopher wilma = factory.build (fork2, fork3, "Wilma");
